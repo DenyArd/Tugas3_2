@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:background="@drawable/sign_in"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:contentDescription="@string/img_logo"
+            android:id="@+id/imglogo"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/logotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ImageView>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_below="@id/imglogo"
+            android:id="@+id/Tvsilahkan"
+            android:layout_marginBottom="50dp"
+            android:text="@string/silahkan_login_untuk_memakai_aplikasi_ini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:inputType="text"
+            android:autofillHints="@string/hint_username"
+            android:hint="@string/hint_username"
+            android:drawableStart="@drawable/ic_username"
+            android:id="@+id/etusername"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Tvsilahkan"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <EditText
+            android:autofillHints="@string/hint_password"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password"
+            android:drawableStart="@drawable/ic_password"
+            android:id="@+id/etpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_below="@id/etusername"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <Button
+            android:text="@string/masuk"
+            android:id="@+id/btnlogin"
+            android:background="@drawable/btn_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <TextView
+            android:id="@+id/tvcreateaccount"
+            android:textAlignment="center"
+            android:text="@string/create_a_new_account"
+            android:layout_below="@id/btnlogin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</LinearLayout>
